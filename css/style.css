@@ -220,3 +220,21 @@ html {
 .progress-bar {
   background-color: #4668a2;
 }
+#services-h2{
+  color: #37517e;
+  font-weight: 800;
+}
+.services {
+ background-color: #f3f5fa;
+}
+#services-icon {
+  color: #47b2e4;
+  text-align: left;
+}
+#services-col {
+  background-color: #fff;
+  width: 88%;
+}
+header {
+  background-color: #37517e;
+}
