@@ -105,10 +105,6 @@ html {
 #hero-watch-video:hover .material-symbols-outlined {
   color: #73c5eb;
 }
-.col {
-  display: flex;
-  align-items: center;
-}
 #hero-col-2 {
   margin-bottom: 50px;
   position: relative;
@@ -191,7 +187,7 @@ html {
 }
 .section-4 {
   background-color: #e9ecef;
-  padding-top: 50px;
+  padding: 100px 0;
 }
 #accordion-item {
   border-radius: 5px;
@@ -213,6 +209,7 @@ html {
 }
 #accordion-btn:focus {
   outline: 0;
+  border: #fff;
 }
 #progress-h2 {
   color: #37517e;
@@ -237,4 +234,23 @@ html {
 }
 header {
   background-color: #37517e;
+}
+.accordion-button {
+  background-color: #fff!important;
+}
+.accordion-button:focus {
+  border-color: #fff!important;
+  outline: none;
+}
+.accordion {
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0 white!important;
+}
+.accordion-button:not(.collapsed) {
+  box-shadow: none!important;
+}
+#services-h4 {
+  color: #4668a2;
+}
+.services-p {
+  color: #444;
 }
