@@ -6,6 +6,7 @@
 }
 body {
   font-family: "Open Sans", sans-serif;
+  height: 1000px;
 }
 html {
   scroll-behavior: smooth;
@@ -231,9 +232,16 @@ html {
 #services-col {
   background-color: #fff;
   width: 88%;
+  box-shadow: 0 0 15px 2px #E5E9EC;
+}
+#services-col:hover {
+  transform: translate(0, -5px);
+}
+#services-col:hover #services-h4 {
+  color: #47b2e4;
 }
 header {
-  background-color: #37517e;
+  background: color 0;;
 }
 .accordion-button {
   background-color: #fff!important;
