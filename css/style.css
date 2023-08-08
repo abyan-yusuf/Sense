@@ -218,12 +218,12 @@ html {
 .progress-bar {
   background-color: #4668a2;
 }
-#services-h2{
+#services-h2 {
   color: #37517e;
   font-weight: 800;
 }
 .services {
- background-color: #f3f5fa;
+  background-color: #f3f5fa;
 }
 #services-icon {
   color: #47b2e4;
@@ -232,7 +232,7 @@ html {
 #services-col {
   background-color: #fff;
   width: 88%;
-  box-shadow: 0 0 15px 2px #E5E9EC;
+  box-shadow: 0 0 15px 2px #e5e9ec;
 }
 #services-col:hover {
   transform: translate(0, -5px);
@@ -241,24 +241,40 @@ html {
   color: #47b2e4;
 }
 header {
-  background: color 0;;
+  background: color 0;
 }
 .accordion-button {
-  background-color: #fff!important;
+  background-color: #fff !important;
 }
 .accordion-button:focus {
-  border-color: #fff!important;
+  border-color: #fff !important;
   outline: none;
 }
 .accordion {
-  --bs-accordion-btn-focus-box-shadow: 0 0 0 0 white!important;
+  --bs-accordion-btn-focus-box-shadow: 0 0 0 0 white !important;
 }
 .accordion-button:not(.collapsed) {
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
 #services-h4 {
   color: #4668a2;
 }
 .services-p {
   color: #444;
+}
+.cta {
+  background-image: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+    url(../images/baptiste-buisson-oUV7dlmXKms-unsplash.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 55vh;
+  background-attachment: fixed;
+}
+
+.cta-text{
+  color: #fff;
+}
+.cta-col-2 {
+  min-height: 50px;
 }
