@@ -263,7 +263,10 @@ header {
   color: #444;
 }
 .cta {
-  background-image: linear-gradient(rgba(40, 58, 90, 0.9), rgba(40, 58, 90, 0.9)),
+  background-image: linear-gradient(
+      rgba(40, 58, 90, 0.9),
+      rgba(40, 58, 90, 0.9)
+    ),
     url(../images/baptiste-buisson-oUV7dlmXKms-unsplash.jpg);
   background-repeat: no-repeat;
   background-size: cover;
@@ -272,9 +275,38 @@ header {
   background-attachment: fixed;
 }
 
-.cta-text{
+.cta-text {
   color: #fff;
 }
 .cta-col-2 {
   min-height: 50px;
+}
+#portfolio-h2 {
+  color: #37517e;
+  font-weight: 800;
+}
+.portfolio {
+  background-color: #fff;
+}
+.nav-tabs {
+  border-bottom: none;
+}
+#cta-link:hover {
+  border: none !important;
+  background-color: #47b2e4;
+  padding: 0 2px;
+}
+.tab-link {
+  color: black !important;
+  background-color: #fff !important;
+  --bs-nav-tabs-link-active-border-color: color 0;
+}
+.tab-link:hover,
+.tab-link:focus {
+  background-color: #47b2e4 !important;
+  color: #fff !important;
+}
+.image-fluid {
+  width: 100%;
+  height: auto;
 }
