@@ -162,10 +162,7 @@ html {
   width: 40px;
   height: 3px;
   top: -16px;
-  right: -26px;
-}
-#about-h1 {
-  color: #37517e;
+  right: -3vw;
 }
 #about-list {
   list-style: none;
@@ -173,9 +170,6 @@ html {
 }
 #about-ul {
   padding: 0;
-}
-#about-h1 {
-  font-weight: 800;
 }
 #about-a {
   padding: 10px 30px;
@@ -218,7 +212,7 @@ html {
 .progress-bar {
   background-color: #4668a2;
 }
-#services-h2 {
+#heading {
   color: #37517e;
   font-weight: 800;
 }
@@ -281,10 +275,6 @@ header {
 .cta-col-2 {
   min-height: 50px;
 }
-#portfolio-h2 {
-  color: #37517e;
-  font-weight: 800;
-}
 .portfolio {
   background-color: #fff;
 }
@@ -309,4 +299,47 @@ header {
 .image-fluid {
   width: 100%;
   height: auto;
+}
+
+.progress {
+  border-radius: 0 !important;
+  height: 10px;
+}
+.progress-h6 {
+  font-size: smaller;
+}
+.team {
+  background-color: #f3f5fa;
+}
+.team-img {
+  height: 25vh;
+  width: 150px;
+}
+#team-col {
+  width: 50%;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s;
+}
+#team-col:hover {
+  transform: translateY(-5px);
+}
+.h5 {
+  color: #4668a2;
+}
+.divider-2::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  width: 50px;
+  background-color: #cbd6e9;
+}
+.team-icon {
+  color: #4668a2;
+  background-color: #eff2f8;
+  margin-right: 10px;
+  padding: 10px 12px;
+}
+.team-icon:hover {
+  color: #ffffff;
+  background-color: #47b2e4;
 }
