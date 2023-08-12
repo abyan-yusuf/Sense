@@ -394,3 +394,67 @@ header {
 .faq {
   background-color: #f3f5fa;
 }
+#contact-col-1{
+  flex-basis: 39%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: relative;
+}
+#contact-col-2 {
+  flex-basis: 59%;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+  padding: 0;
+  position: relative;
+}
+.divider-4 {
+  background-color: #47b2e4;
+  height: 3px;
+  width: 100%;
+  position: absolute;
+}
+#geo-span {
+  background-color: #e7f5fb;
+  padding: 10px 12.5px;
+  color: #47b2e4;
+  margin-right: 10px;
+  margin-top: 50px;
+}
+#geo-span:hover {
+  background-color: #47b2e4;
+  color: white;
+}
+.location {
+  color: #37517e;
+  margin-bottom: 30px;
+}
+.contact-p {
+  color: #6182ba;
+  margin-left: 4vw;
+  font-size: small;
+}
+#maps {
+  width: 100%;
+  height: 300px;
+}
+#name, #email {width: 45%;}
+#subject {width: 100%;}
+input {
+  height: 45px;
+  border: 2px solid #ddd;
+}
+textarea {
+  border: 2px solid #dddddd;
+}
+#send {
+  color: white;
+  background-color: #47b2e4;
+  margin-left: 35%;
+  margin-top: 15px;
+  padding: 10px 30px;
+}
+#send:hover{
+  background: #23a3df;
+}#bla{
+  padding-top: 28px!important;
+  padding-bottom: 28px;
+}
