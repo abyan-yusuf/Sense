@@ -187,7 +187,7 @@ html {
 #accordion-item {
   border-radius: 5px;
 }
-#accordion-btn:hover {
+#accordion-btn:hover, #accordion-btn:focus {
   color: #47b2e4;
 }
 #accordion-span {
@@ -354,7 +354,6 @@ header {
   height: 5px;
   width: 100%;
   position: absolute;
-  top: 10px;
 }
 #pricing-col-heading {
   color: #37517e;
@@ -391,4 +390,7 @@ header {
 .pricing-get-started:hover {
   background-color: #47b2e4;
   color: #ffffff;
+}
+.faq {
+  background-color: #f3f5fa;
 }
