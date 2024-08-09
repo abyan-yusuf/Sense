@@ -4,6 +4,10 @@
   box-sizing: border-box;
   transition: all 0.3s;
 }
+.px-10 {
+  padding-right: 4.75rem;
+  padding-left: 4.75rem;
+}
 body {
   font-family: "Open Sans", sans-serif;
   height: 1000px;
@@ -187,7 +191,8 @@ html {
 #accordion-item {
   border-radius: 5px;
 }
-#accordion-btn:hover, #accordion-btn:focus {
+#accordion-btn:hover,
+#accordion-btn:focus {
   color: #47b2e4;
 }
 #accordion-span {
@@ -394,7 +399,7 @@ header {
 .faq {
   background-color: #f3f5fa;
 }
-#contact-col-1{
+#contact-col-1 {
   flex-basis: 39%;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
   padding: 0;
@@ -436,8 +441,13 @@ header {
   width: 100%;
   height: 300px;
 }
-#name, #email {width: 45%;}
-#subject {width: 100%;}
+#name,
+#email {
+  width: 45%;
+}
+#subject {
+  width: 100%;
+}
 input {
   height: 45px;
   border: 2px solid #ddd;
@@ -452,9 +462,38 @@ textarea {
   margin-top: 15px;
   padding: 10px 30px;
 }
-#send:hover{
+#send:hover {
   background: #23a3df;
-}#bla{
-  padding-top: 28px!important;
+}
+#bla {
+  padding-top: 28px !important;
   padding-bottom: 28px;
+}
+
+.scrolled {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 2000;
+}
+
+.scrolled div {
+  background-color: darkgrey;
+  z-index: 2000;
+}
+
+.menu div div div nav div button {
+  z-index: 2000;
+}
+
+.menu div {
+  transition: background-color 0.15s;
+}
+
+@media (max-width: 575px) {
+  .menu div {
+    padding-right: 0 !important;
+    padding-left: 10px !important;
+  }
 }

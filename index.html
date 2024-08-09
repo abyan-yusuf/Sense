@@ -17,17 +17,13 @@
 
     <link rel="stylesheet" href="css/style.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css
-
-
-
-">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 
 <body id="body">
-    <header class="fixed-top">
-        <div class="container">
+    <header class="menu">
+        <div class="position-absolute col-11 col-md-12 px-10 z-3">
             <div class="row">
                 <div class="col-12 p-0">
                     <nav class="navbar navbar-expand-lg" id="navbar">
@@ -41,7 +37,7 @@
                             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                                 <ul class="navbar-nav ms-auto" id="navbar-nav">
                                     <li class="nav-item">
-                                        <a class="nav-link active" id="nav-item" aria-current="page" href="#"">Home</a>
+                                        <a class="nav-link active" id="nav-item" aria-current="page" href="#">Home</a>
                                     </li>
                                     <li class=" nav-item">
                                             <a class="nav-link" href="#about" id="nav-item">About</a>
@@ -316,7 +312,7 @@
     <section class="cta d-flex align-items-center">
         <div class="container">
             <div class="row">
-                <div class="col-9">
+                <div class="col-lg-9 col-12 d-block d-lg-inline">
                     <h3 class="cta-text fw-bold">Call To Action
                     </h3>
                     <p class="cta-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui mollitia incidunt
@@ -325,7 +321,7 @@
                         quam
                         deserunt aliquid saepe.</p>
                 </div>
-                <div class="col-3 d-flex align-items-center" id="cta-col-2"><a href="#"
+                <div class="col col-lg-3 d-flex align-items-center" id="cta-col-2"><a href="#"
                         class="border-2 text-light fw-semibold rounded-pill text-decoration-none py-3 px-5 border"
                         id="cta-link">Call
                         To Action</a></div>
@@ -728,9 +724,8 @@
                         <p class="contact-p">+1 800 555 1212</p>
                     </div>
                     <div class="px-4 pb-4"><iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.8799623303609!2d90.43111736952788!3d23.764495826058546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c75182cfac27%3A0x82cf58dd6f29941f!2sFan%20Tower%2C%20Aftabnagar!5e0!3m2!1sen!2sbd!4v1691838662070!5m2!1sen!2sbd"
-                            width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d912.8799623303609!2d90.43111736952788!3d23.764495826058546!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c75182cfac27%3A0x82cf58dd6f29941f!2sFan%20Tower%2C%20Aftabnagar!5e0!3m2!1sen!2sbd!4v1691838662070!5m2!1sen!2sbd" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                            referrerpolicy="no-referrer-when-downgrade" class="w-75"></iframe></div>
                     <div class="divider-4"></div>
                 </div>
                 <div id="contact-col-2">
@@ -743,7 +738,7 @@
                             <label for="subject" class="mt-4 mb-2">Subject</label>
                             <input type="text" id="subject" class="rounded border-1">
                             <label for="message" class="mt-4 mb-2">Message</label>
-                            <textarea id="message" cols="73" rows="10" class="rounded border-1"></textarea>
+                            <textarea id="message" rows="10" class="rounded border-1" class="w-auto"></textarea>
                             <a class="btn rounded-pill" id="send">Send Message</a>
                         </form>
                     </div>
@@ -756,4 +751,16 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        const menu = document.querySelector(".menu")
+
+        window.addEventListener("scroll", () => {
+            if(window.scrollY >= 250){
+                menu.classList.add("scrolled")
+            }else{
+                menu.classList.remove("scrolled")
+            }
+        })
+    </script>
 </body>
